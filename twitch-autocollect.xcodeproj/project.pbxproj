@@ -1,0 +1,571 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7A952067259A1BA800640DE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A952066259A1BA800640DE8 /* AppDelegate.swift */; };
+		7A95206A259A1BA800640DE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A952068259A1BA800640DE8 /* Main.storyboard */; };
+		7A95206C259A1BA800640DE8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A95206B259A1BA800640DE8 /* ViewController.swift */; };
+		7A95206E259A1BA800640DE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A95206D259A1BA800640DE8 /* Assets.xcassets */; };
+		7A952075259A1BA800640DE8 /* twitch-autocollect Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7A952074259A1BA800640DE8 /* twitch-autocollect Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7A95207A259A1BA800640DE8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A952079259A1BA800640DE8 /* Cocoa.framework */; };
+		7A95207D259A1BA800640DE8 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A95207C259A1BA800640DE8 /* SafariWebExtensionHandler.swift */; };
+		7A952080259A1BA800640DE8 /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = 7A95207F259A1BA800640DE8 /* _locales */; };
+		7A952082259A1BA900640DE8 /* images in Resources */ = {isa = PBXBuildFile; fileRef = 7A952081259A1BA900640DE8 /* images */; };
+		7A952084259A1BA900640DE8 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 7A952083259A1BA900640DE8 /* manifest.json */; };
+		7A95208A259A1BA900640DE8 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 7A952089259A1BA900640DE8 /* popup.html */; };
+		7A95208C259A1BA900640DE8 /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = 7A95208B259A1BA900640DE8 /* popup.css */; };
+		7A95208E259A1BA900640DE8 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 7A95208D259A1BA900640DE8 /* popup.js */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7A952076259A1BA800640DE8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7A95205A259A1BA800640DE8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A952073259A1BA800640DE8;
+			remoteInfo = "twitch-autocollect Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7A952096259A1BA900640DE8 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7A952075259A1BA800640DE8 /* twitch-autocollect Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7A5FFFBC25EF77FF00210F6D /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		7A5FFFBF25EF77FF00210F6D /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; path = _locales; sourceTree = "<group>"; };
+		7A5FFFC125EF77FF00210F6D /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		7A5FFFC325EF77FF00210F6D /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
+		7A5FFFC525EF77FF00210F6D /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = background.js; sourceTree = "<group>"; };
+		7A5FFFC725EF77FF00210F6D /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = content.js; sourceTree = "<group>"; };
+		7A5FFFC925EF77FF00210F6D /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = popup.html; sourceTree = "<group>"; };
+		7A5FFFCB25EF77FF00210F6D /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = popup.css; sourceTree = "<group>"; };
+		7A5FFFCD25EF77FF00210F6D /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = popup.js; sourceTree = "<group>"; };
+		7A5FFFCF25EF77FF00210F6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A5FFFD025EF77FF00210F6D /* TwitchAutocolllect.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TwitchAutocolllect.entitlements; sourceTree = "<group>"; };
+		7A952062259A1BA800640DE8 /* twitch-autocollect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "twitch-autocollect.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A952065259A1BA800640DE8 /* twitch_autocollect.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = twitch_autocollect.entitlements; sourceTree = "<group>"; };
+		7A952066259A1BA800640DE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7A952069259A1BA800640DE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7A95206B259A1BA800640DE8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7A95206D259A1BA800640DE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7A95206F259A1BA800640DE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A952074259A1BA800640DE8 /* twitch-autocollect Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "twitch-autocollect Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A952079259A1BA800640DE8 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		7A95207C259A1BA800640DE8 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		7A95207F259A1BA800640DE8 /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; path = _locales; sourceTree = "<group>"; };
+		7A952081259A1BA900640DE8 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		7A952083259A1BA900640DE8 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
+		7A952089259A1BA900640DE8 /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = popup.html; sourceTree = "<group>"; };
+		7A95208B259A1BA900640DE8 /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = popup.css; sourceTree = "<group>"; };
+		7A95208D259A1BA900640DE8 /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = popup.js; sourceTree = "<group>"; };
+		7A95208F259A1BA900640DE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A952090259A1BA900640DE8 /* twitch_autocollect_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = twitch_autocollect_Extension.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7A95205F259A1BA800640DE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A952071259A1BA800640DE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A95207A259A1BA800640DE8 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7A5FFFBB25EF77FF00210F6D /* TwitchAutocolllect */ = {
+			isa = PBXGroup;
+			children = (
+				7A5FFFBC25EF77FF00210F6D /* SafariWebExtensionHandler.swift */,
+				7A5FFFCF25EF77FF00210F6D /* Info.plist */,
+				7A5FFFD025EF77FF00210F6D /* TwitchAutocolllect.entitlements */,
+				7A5FFFBE25EF77FF00210F6D /* Resources */,
+			);
+			path = TwitchAutocolllect;
+			sourceTree = "<group>";
+		};
+		7A5FFFBE25EF77FF00210F6D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7A5FFFBF25EF77FF00210F6D /* _locales */,
+				7A5FFFC125EF77FF00210F6D /* images */,
+				7A5FFFC325EF77FF00210F6D /* manifest.json */,
+				7A5FFFC525EF77FF00210F6D /* background.js */,
+				7A5FFFC725EF77FF00210F6D /* content.js */,
+				7A5FFFC925EF77FF00210F6D /* popup.html */,
+				7A5FFFCB25EF77FF00210F6D /* popup.css */,
+				7A5FFFCD25EF77FF00210F6D /* popup.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7A952059259A1BA800640DE8 = {
+			isa = PBXGroup;
+			children = (
+				7A952064259A1BA800640DE8 /* twitch-autocollect */,
+				7A95207B259A1BA800640DE8 /* twitch-autocollect Extension */,
+				7A5FFFBB25EF77FF00210F6D /* TwitchAutocolllect */,
+				7A952078259A1BA800640DE8 /* Frameworks */,
+				7A952063259A1BA800640DE8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7A952063259A1BA800640DE8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7A952062259A1BA800640DE8 /* twitch-autocollect.app */,
+				7A952074259A1BA800640DE8 /* twitch-autocollect Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7A952064259A1BA800640DE8 /* twitch-autocollect */ = {
+			isa = PBXGroup;
+			children = (
+				7A952065259A1BA800640DE8 /* twitch_autocollect.entitlements */,
+				7A952066259A1BA800640DE8 /* AppDelegate.swift */,
+				7A952068259A1BA800640DE8 /* Main.storyboard */,
+				7A95206B259A1BA800640DE8 /* ViewController.swift */,
+				7A95206D259A1BA800640DE8 /* Assets.xcassets */,
+				7A95206F259A1BA800640DE8 /* Info.plist */,
+			);
+			path = "twitch-autocollect";
+			sourceTree = "<group>";
+		};
+		7A952078259A1BA800640DE8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7A952079259A1BA800640DE8 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7A95207B259A1BA800640DE8 /* twitch-autocollect Extension */ = {
+			isa = PBXGroup;
+			children = (
+				7A95207C259A1BA800640DE8 /* SafariWebExtensionHandler.swift */,
+				7A95208F259A1BA900640DE8 /* Info.plist */,
+				7A952090259A1BA900640DE8 /* twitch_autocollect_Extension.entitlements */,
+				7A95207E259A1BA800640DE8 /* Resources */,
+			);
+			path = "twitch-autocollect Extension";
+			sourceTree = "<group>";
+		};
+		7A95207E259A1BA800640DE8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7A95207F259A1BA800640DE8 /* _locales */,
+				7A952081259A1BA900640DE8 /* images */,
+				7A952083259A1BA900640DE8 /* manifest.json */,
+				7A952089259A1BA900640DE8 /* popup.html */,
+				7A95208B259A1BA900640DE8 /* popup.css */,
+				7A95208D259A1BA900640DE8 /* popup.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7A952061259A1BA800640DE8 /* twitch-autocollect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A952097259A1BA900640DE8 /* Build configuration list for PBXNativeTarget "twitch-autocollect" */;
+			buildPhases = (
+				7A95205E259A1BA800640DE8 /* Sources */,
+				7A95205F259A1BA800640DE8 /* Frameworks */,
+				7A952060259A1BA800640DE8 /* Resources */,
+				7A952096259A1BA900640DE8 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7A952077259A1BA800640DE8 /* PBXTargetDependency */,
+			);
+			name = "twitch-autocollect";
+			productName = "twitch-autocollect";
+			productReference = 7A952062259A1BA800640DE8 /* twitch-autocollect.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7A952073259A1BA800640DE8 /* twitch-autocollect Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A952093259A1BA900640DE8 /* Build configuration list for PBXNativeTarget "twitch-autocollect Extension" */;
+			buildPhases = (
+				7A952070259A1BA800640DE8 /* Sources */,
+				7A952071259A1BA800640DE8 /* Frameworks */,
+				7A952072259A1BA800640DE8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "twitch-autocollect Extension";
+			productName = "twitch-autocollect Extension";
+			productReference = 7A952074259A1BA800640DE8 /* twitch-autocollect Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7A95205A259A1BA800640DE8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					7A952061259A1BA800640DE8 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					7A952073259A1BA800640DE8 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = 7A95205D259A1BA800640DE8 /* Build configuration list for PBXProject "twitch-autocollect" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7A952059259A1BA800640DE8;
+			productRefGroup = 7A952063259A1BA800640DE8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7A952061259A1BA800640DE8 /* twitch-autocollect */,
+				7A952073259A1BA800640DE8 /* twitch-autocollect Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7A952060259A1BA800640DE8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A95206E259A1BA800640DE8 /* Assets.xcassets in Resources */,
+				7A95206A259A1BA800640DE8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A952072259A1BA800640DE8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A95208C259A1BA900640DE8 /* popup.css in Resources */,
+				7A95208A259A1BA900640DE8 /* popup.html in Resources */,
+				7A952082259A1BA900640DE8 /* images in Resources */,
+				7A952084259A1BA900640DE8 /* manifest.json in Resources */,
+				7A952080259A1BA800640DE8 /* _locales in Resources */,
+				7A95208E259A1BA900640DE8 /* popup.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7A95205E259A1BA800640DE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A95206C259A1BA800640DE8 /* ViewController.swift in Sources */,
+				7A952067259A1BA800640DE8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A952070259A1BA800640DE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A95207D259A1BA800640DE8 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7A952077259A1BA800640DE8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7A952073259A1BA800640DE8 /* twitch-autocollect Extension */;
+			targetProxy = 7A952076259A1BA800640DE8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7A952068259A1BA800640DE8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7A952069259A1BA800640DE8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7A952091259A1BA900640DE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7A952092259A1BA900640DE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		7A952094259A1BA900640DE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "twitch-autocollect Extension/twitch_autocollect_Extension.entitlements";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R95CM6CP69;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "twitch-autocollect Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mpelcat.twitch-autocollect.Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		7A952095259A1BA900640DE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "twitch-autocollect Extension/twitch_autocollect_Extension.entitlements";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R95CM6CP69;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "twitch-autocollect Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mpelcat.twitch-autocollect.Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		7A952098259A1BA900640DE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "twitch-autocollect/twitch_autocollect.entitlements";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = R95CM6CP69;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "twitch-autocollect/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mpelcat.twitch-autocollect";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		7A952099259A1BA900640DE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "twitch-autocollect/twitch_autocollect.entitlements";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = R95CM6CP69;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "twitch-autocollect/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mpelcat.twitch-autocollect";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7A95205D259A1BA800640DE8 /* Build configuration list for PBXProject "twitch-autocollect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A952091259A1BA900640DE8 /* Debug */,
+				7A952092259A1BA900640DE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A952093259A1BA900640DE8 /* Build configuration list for PBXNativeTarget "twitch-autocollect Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A952094259A1BA900640DE8 /* Debug */,
+				7A952095259A1BA900640DE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A952097259A1BA900640DE8 /* Build configuration list for PBXNativeTarget "twitch-autocollect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A952098259A1BA900640DE8 /* Debug */,
+				7A952099259A1BA900640DE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7A95205A259A1BA800640DE8 /* Project object */;
+}
